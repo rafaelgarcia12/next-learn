@@ -5,7 +5,6 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 
-
 import {
   fetchRevenue,
   fetchLatestInvoices,
@@ -38,8 +37,8 @@ export default async function Page() {
         </Suspense>
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <RevenueChart/>
-        <LatestInvoices/>
+        {/* <RevenueChart revenue={revenue}  /> */}
+        {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
       </div>
     </main>
   );
